@@ -76,6 +76,20 @@
         "caida_auc": 0.005202076602556893
       }
     },
+    "No sé en 5 y 6 (4 obligatoria)": {
+      "todas": {
+        "auc_roc": 0.6386870068617405,
+        "auc_pr": 0.11636111189913677,
+        "brier_calibrado": 0.06406116054205874,
+        "caida_auc": 0.0025165677667076114
+      },
+      "emprendedoras": {
+        "auc_roc": 0.6205507483063457,
+        "auc_pr": 0.11978351596572887,
+        "brier_calibrado": 0.06841957305697405,
+        "caida_auc": 0.007104068966185095
+      }
+    },
     "No sé en 4, 5 y 6": {
       "todas": {
         "auc_roc": 0.6060819144548497,
@@ -109,6 +123,7 @@
     "No sé en 4": false,
     "No sé en 5": true,
     "No sé en 6": true,
+    "No sé en 5 y 6": true,
     "No sé en 4, 5 y 6": false
   }
 }

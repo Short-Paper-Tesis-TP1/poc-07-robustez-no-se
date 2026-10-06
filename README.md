@@ -31,6 +31,7 @@ python poc_robustez.py "C:\ruta\home-credit-default-risk"
 | No sé en 4 (otros créditos) | 0.6172 | +0.0240 | 0.6024 | +0.0252 | No cumple |
 | No sé en 5 (deuda) | 0.6420 | -0.0008 | 0.6252 | +0.0025 | Cumple |
 | No sé en 6 (atrasos) | 0.6375 | +0.0037 | 0.6225 | +0.0052 | Cumple |
+| No sé en 5 y 6 (4 obligatoria) | 0.6387 | +0.0025 | 0.6206 | +0.0071 | Cumple |
 | No sé en 4, 5 y 6 | 0.6061 | +0.0351 | 0.5859 | +0.0417 | No cumple |
 | CONTROL: No sé en edad | 0.5962 | +0.0450 | 0.5792 | +0.0484 | (control) |
 

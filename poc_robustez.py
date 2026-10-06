@@ -10,6 +10,7 @@ en las preguntas que pueden ser difíciles de conocer:
 Criterio de aceptación (fijado ANTES de correr):
   - Caída de AUC-ROC <= 0.02 con "No sé" en UNA pregunta.
   - Caída de AUC-ROC <= 0.03 con "No sé" en las TRES a la vez.
+  - Caída de AUC-ROC <= 0.02 con "No sé" en 5 y 6 (diseño final: la 4 es obligatoria).
   - Se exige en todas las mujeres Y en el subgrupo emprendedoras.
 
 Control: "No sé" en edad, variable que NUNCA falta en el entrenamiento.
@@ -107,6 +108,7 @@ escenarios = {
     "No sé en 4 (otros créditos)": ["n_otros_creditos"],
     "No sé en 5 (deuda)": ["ratio_deuda_ingreso"],
     "No sé en 6 (atrasos)": ["atraso_historial"],
+    "No sé en 5 y 6 (4 obligatoria)": ["ratio_deuda_ingreso", "atraso_historial"],
     "No sé en 4, 5 y 6": ["n_otros_creditos", "ratio_deuda_ingreso", "atraso_historial"],
     "CONTROL: No sé en edad": ["edad"],
 }
@@ -140,6 +142,7 @@ veredicto = {
     "No sé en 4": cumple("No sé en 4 (otros créditos)", 0.02),
     "No sé en 5": cumple("No sé en 5 (deuda)", 0.02),
     "No sé en 6": cumple("No sé en 6 (atrasos)", 0.02),
+    "No sé en 5 y 6": cumple("No sé en 5 y 6 (4 obligatoria)", 0.02),
     "No sé en 4, 5 y 6": cumple("No sé en 4, 5 y 6", 0.03),
 }
 
