@@ -1,0 +1,114 @@
+{
+  "poblacion": {
+    "mujeres": 202448,
+    "emprendedoras": 62091,
+    "tasa_target": 0.06999328222555916
+  },
+  "faltantes_entrenamiento_pct": {
+    "ratio_cuota_ingreso": 0.0,
+    "ratio_deuda_ingreso": 13.64,
+    "ratio_monto_ingreso": 0.0,
+    "n_otros_creditos": 13.64,
+    "atraso_historial": 70.39,
+    "edad": 0.0,
+    "nivel_educativo": 0.0,
+    "n_hijos": 0.0
+  },
+  "segundos_entrenamiento": 2.4,
+  "criterio": {
+    "una_pregunta": 0.02,
+    "tres_preguntas": 0.03
+  },
+  "resultados": {
+    "Completo (sin 'No sé')": {
+      "todas": {
+        "auc_roc": 0.6412035746284481,
+        "auc_pr": 0.1169657372154421,
+        "brier_calibrado": 0.06416187276011523,
+        "caida_auc": 0.0
+      },
+      "emprendedoras": {
+        "auc_roc": 0.6276548172725308,
+        "auc_pr": 0.12062589796886941,
+        "brier_calibrado": 0.06852409088230331,
+        "caida_auc": 0.0
+      }
+    },
+    "No sé en 4 (otros créditos)": {
+      "todas": {
+        "auc_roc": 0.6172469823537637,
+        "auc_pr": 0.10653871247269711,
+        "brier_calibrado": 0.06456787888336667,
+        "caida_auc": 0.023956592274684385
+      },
+      "emprendedoras": {
+        "auc_roc": 0.6024208202483273,
+        "auc_pr": 0.11463600340040893,
+        "brier_calibrado": 0.06892193640104818,
+        "caida_auc": 0.02523399702420348
+      }
+    },
+    "No sé en 5 (deuda)": {
+      "todas": {
+        "auc_roc": 0.6420383001425057,
+        "auc_pr": 0.11777725141754984,
+        "brier_calibrado": 0.06401242609420452,
+        "caida_auc": -0.0008347255140576104
+      },
+      "emprendedoras": {
+        "auc_roc": 0.6252026898361376,
+        "auc_pr": 0.12080943208729415,
+        "brier_calibrado": 0.06837682387235752,
+        "caida_auc": 0.0024521274363932255
+      }
+    },
+    "No sé en 6 (atrasos)": {
+      "todas": {
+        "auc_roc": 0.637464039633798,
+        "auc_pr": 0.11566991654530258,
+        "brier_calibrado": 0.06419016510155612,
+        "caida_auc": 0.0037395349946500733
+      },
+      "emprendedoras": {
+        "auc_roc": 0.6224527406699739,
+        "auc_pr": 0.11946985584784157,
+        "brier_calibrado": 0.06851751673891486,
+        "caida_auc": 0.005202076602556893
+      }
+    },
+    "No sé en 4, 5 y 6": {
+      "todas": {
+        "auc_roc": 0.6060819144548497,
+        "auc_pr": 0.10372238698469617,
+        "brier_calibrado": 0.0645493907060669,
+        "caida_auc": 0.03512166017359841
+      },
+      "emprendedoras": {
+        "auc_roc": 0.5859238686647322,
+        "auc_pr": 0.11129781442201298,
+        "brier_calibrado": 0.06898024261475108,
+        "caida_auc": 0.04173094860779858
+      }
+    },
+    "CONTROL: No sé en edad": {
+      "todas": {
+        "auc_roc": 0.596158475567603,
+        "auc_pr": 0.10129377922948218,
+        "brier_calibrado": 0.0745618264327957,
+        "caida_auc": 0.045045099060845084
+      },
+      "emprendedoras": {
+        "auc_roc": 0.5792274386524353,
+        "auc_pr": 0.10031932279172982,
+        "brier_calibrado": 0.07818079615504976,
+        "caida_auc": 0.048427378620095496
+      }
+    }
+  },
+  "veredicto": {
+    "No sé en 4": false,
+    "No sé en 5": true,
+    "No sé en 6": true,
+    "No sé en 4, 5 y 6": false
+  }
+}

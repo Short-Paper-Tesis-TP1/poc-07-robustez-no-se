@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Datos de Home Credit (Kaggle): no se redistribuyen, se descargan de la competencia
+*.csv
+home-credit-default-risk/

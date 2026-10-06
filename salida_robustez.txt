@@ -1,0 +1,30 @@
+
+Mujeres: 202,448 | emprendedoras: 62,091 | TARGET=1: 7.00 %
+Prueba: 30,368 filas (9,449 emprendedoras)
+Entrenamiento: 2.4 s | total: 6.9 s
+
+% de faltantes que el modelo YA VIO al entrenar:
+  ratio_cuota_ingreso      0.00 %
+  ratio_deuda_ingreso     13.64 %
+  ratio_monto_ingreso      0.00 %
+  n_otros_creditos        13.64 %
+  atraso_historial        70.39 %
+  edad                     0.00 %
+  nivel_educativo          0.00 %
+  n_hijos                  0.00 %
+
+Escenario                         AUC todas   caída  AUC empr.   caída  AUC-PR   Brier
+Completo (sin 'No sé')               0.6412  0.0000     0.6277  0.0000  0.1170  0.0642
+No sé en 4 (otros créditos)          0.6172  0.0240     0.6024  0.0252  0.1065  0.0646
+No sé en 5 (deuda)                   0.6420 -0.0008     0.6252  0.0025  0.1178  0.0640
+No sé en 6 (atrasos)                 0.6375  0.0037     0.6225  0.0052  0.1157  0.0642
+No sé en 4, 5 y 6                    0.6061  0.0351     0.5859  0.0417  0.1037  0.0645
+CONTROL: No sé en edad               0.5962  0.0450     0.5792  0.0484  0.1013  0.0746
+
+Veredicto (criterio fijado antes de correr):
+  No sé en 4           NO CUMPLE
+  No sé en 5           CUMPLE
+  No sé en 6           CUMPLE
+  No sé en 4, 5 y 6    NO CUMPLE
+
+Guardado: resultado_poc_robustez.json
